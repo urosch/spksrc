@@ -4,7 +4,7 @@ TC_TYPE = SRM
 TC_KERNEL = 4.4.60
 TC_GLIBC = 2.32
 
-TC_DIST = gcc1030_glibc232_srm-1.3
+TC_DIST = ipq806x-gcc1030_glibc232_srm-1.3
 TC_EXT = tar.xz
 TC_DIST_SITE_URL = https://github.com/SynoCommunity/spksrc/releases/download/
 TC_DIST_SITE_PATH = toolchains%2Fsrm1.3

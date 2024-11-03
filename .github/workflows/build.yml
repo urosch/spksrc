@@ -98,6 +98,7 @@ jobs:
       add_dsm62_builds: ${{ steps.set-defaults.outputs.add_dsm62_builds }}
       add_dsm52_builds: ${{ steps.set-defaults.outputs.add_dsm52_builds }}
       add_srm12_builds: ${{ steps.set-defaults.outputs.add_srm12_builds }}
+      add_srm13_builds: ${{ steps.set-defaults.outputs.add_srm13_builds }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -167,6 +168,7 @@ jobs:
           add_dsm62_builds=${{ needs.prepare.outputs.add_dsm62_builds }}
           add_dsm52_builds=${{ needs.prepare.outputs.add_dsm52_builds }}
           add_srm12_builds=${{ needs.prepare.outputs.add_srm12_builds }}
+          add_srm13_builds=${{ needs.prepare.outputs.add_srm13_builds }}
 
           # Create matrix as a JSON object
           matrix='{"include": ['
